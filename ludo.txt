@@ -1,0 +1,110 @@
+LUDO
+
+1)game
+	1:gmae_id
+	2:game_name
+	
+2)game_instance
+	1:instance_id
+	2:date
+	3:start_time
+	4:end_time
+	5:game_id
+	
+3)player
+	1:player_id
+	2:player_name
+	
+4)game_playe(m to m)
+	1:game_player_id
+	2:gmae_id
+	3:player_id
+	
+5)game_instance_player
+	1:game_instance_player_id
+	2:game_player_id
+	3:seq_order
+	
+6)color
+	1:color_id
+	2:color_name
+	
+7)corner
+	1:corner_id
+	2:color_id
+	
+8)token_blue
+	1:token_id
+	2:color_id
+	3:corner_id
+	4:game_player_id
+	
+9)token_red
+	1:token_id
+	2:color_id
+	3:corner_id
+	4:game_player_id
+	
+10)token_green
+	1:token_id
+	2:color_id
+	3:corner_id
+	4:game_player_id
+	
+11)token_yellow
+	1:token_id
+	2:color_id
+	3:corner_id
+	4:game_player_id
+	
+12)dice
+	1:dice_id
+	2:game_player_id
+	3:dice_value
+	
+13)movement
+	1:movement_id
+	2:dice_id
+	3:start_position
+	4:end_position
+	
+14)current_position
+	1:current_player_position_id
+	2:game_player_id
+	3:current_position
+	
+15)safe_area
+	1:safe_area_id
+	2:safe_area_position
+	3:game_palyer_id
+	
+16)game_player_safe_area (m to m)
+	1:game_player_safe_area_id
+	2:safe_area_id
+	3:game_player_id
+	
+17)home_line_safe_area
+	1:home_line_safe_area
+	2:game_player_id
+	3:start_point
+	4:end_point
+	5:color_id
+	
+18)home_triangle
+	1:home_triangle_id
+	2:color_id
+	3:home_line_safe_area_id
+	
+19)tracking_result
+	1:tracking_result_id
+	2:corner_id
+	3:end_point
+	
+20)Winners
+	1:winner_id
+	2:corner_id
+	3:position
+	
+
+	
+	
